@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #004ba0;
+  color: #fff;
+  padding: 2rem 3rem;
+  &__title {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 0.5rem;
+  }
+}
