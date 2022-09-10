@@ -1,0 +1,55 @@
+@use '@/styles/modules/utils';
+
+.about_page {
+  max-width: 900px;
+  padding: 2rem 0;
+  margin: auto;
+  &__profile {
+    margin-bottom: 2.5rem;
+  }
+}
+
+.about_step {
+  color: #fff;
+  text-align: center;
+  @media (max-width: utils.$breakpoint-md) {
+    padding: 0 1rem;
+  }
+  &__bar {
+    display: block;
+    width: 3px;
+    height: 80px;
+    background-color: utils.$primary-light;
+    margin: auto;
+    @media (max-width: utils.$breakpoint-sm) {
+      height: 50px;
+    }
+  }
+  &__content {
+    border-radius: 1rem;
+    background-color: utils.$primary-main;
+    overflow: hidden;
+  }
+  &__header {
+    position: relative;
+    font-size: 1.25rem;
+    font-weight: bold;
+    background-color: utils.$primary-dark;
+    padding: 1.5rem 2rem;
+  }
+  &__date {
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    transform: translateY(-50%);
+  }
+  &__description {
+    display: inline-block;
+    text-align: left;
+    white-space: pre-line;
+    padding: 2.5rem 3.5rem;
+    @media (max-width: utils.$breakpoint-sm) {
+      padding: 1rem 1.4rem;
+    }
+  }
+}
