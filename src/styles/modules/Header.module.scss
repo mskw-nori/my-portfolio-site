@@ -1,8 +1,10 @@
+@use '@/styles/modules/utils';
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #004ba0;
+  background-color: utils.$primary-main;
   color: #fff;
   padding: 2rem 3rem;
   &__title {

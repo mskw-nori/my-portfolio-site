@@ -1,5 +1,7 @@
+@use '@/styles/modules/utils';
+
 .footer {
-  background-color: #1976d2;
+  background-color: utils.$primary-dark;
   color: #fff;
   text-align: center;
   padding: 1rem 0;
