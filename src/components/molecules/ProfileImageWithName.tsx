@@ -7,11 +7,10 @@ import { getNowDateString } from '@/utils/getNowDateString'
 
 type Props = {
   pageComment: string
-  className?: string
 }
 
-export const ProfileImageWithName: FC<Props> = ({ pageComment, className }) => (
-  <div className={`${styles.profile} ${className}`}>
+export const ProfileImageWithName: FC<Props> = ({ pageComment }) => (
+  <div className={styles.profile}>
     <ProfileImage />
     <h1>本日は {getNowDateString()}</h1>
     <h2>ようこそ、masukawa-norishige の{pageComment}へ。</h2>
