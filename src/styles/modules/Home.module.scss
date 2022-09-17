@@ -1,59 +1,9 @@
 @use '@/styles/modules/utils';
 
 .home_page {
-  max-width: 600px;
   padding: 2rem 2rem;
   margin: auto;
   &__profile {
     margin-bottom: 2.5rem;
-  }
-}
-
-.home_sheet {
-  text-align: center;
-  border: 1px solid utils.$primary-dark;
-  border-radius: 1rem;
-  box-shadow: 5px 5px 5px utils.$primary-light;
-  padding: 1.25rem;
-  &__pins {
-    display: flex;
-    justify-content: space-between;
-  }
-  &__leftpin {
-    width: 10px;
-    height: 10px;
-    color: #b0c4de;
-    line-height: 2.25rem;
-    transform: rotate(-20deg);
-    border-radius: 100vh;
-    background-color: utils.$primary-dark;
-    box-shadow: 5px 10px 10px  utils.$primary-light;
-  }
-  &__rightpin {
-    width: 10px;
-    height: 10px;
-    color: #b0c4de;
-    line-height: 2.25rem;
-    transform: rotate(20deg);
-    border-radius: 100vh;
-    background-color: utils.$primary-dark;
-    box-shadow: 5px 10px 10px utils.$primary-light;
-
-  }
-  &__title {
-    font-style: italic;
-    font-size: 2rem;
-    font-weight: bold;
-  }
-  &__skill {
-    border-bottom: 1px solid utils.$primary-dark;
-    &__name {
-      border-bottom: 1px solid utils.$primary-light;
-      padding: 0.25rem 0;
-    }
-    &__description {
-      overflow-wrap: break-word;
-      padding: 0.25rem 0;
-    }
   }
 }

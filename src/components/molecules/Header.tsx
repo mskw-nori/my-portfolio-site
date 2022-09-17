@@ -20,6 +20,9 @@ export const Header: FC<Props> = ({ pageName }) => (
       <Link href="/about">
         <a className={styles.header__link}>ABOUT</a>
       </Link>
+      <Link href="/skills">
+        <a className={styles.header__link}>SKILLS</a>
+      </Link>
       <Link href="https://github.com/mskw-nori">
         <a className={styles.header__link} target="_blank">
           <GithubIcon fill="#fff" width="30px" height="30px" />
