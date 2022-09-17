@@ -1,9 +1,9 @@
-import { FC } from 'react'
-
 import styles from '@/styles/modules/ProfileImageWithName.module.scss'
 
 import { ProfileImage } from '@/components/atoms/ProfileImage'
 import { getNowDateString } from '@/utils/getNowDateString'
+
+import type { FC } from 'react'
 
 type Props = {
   pageComment: string
