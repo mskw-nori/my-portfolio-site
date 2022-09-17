@@ -1,0 +1,63 @@
+@use '@/styles/modules/utils';
+
+.home_page {
+  max-width: 600px;
+  padding: 2rem 2rem;
+  margin: auto;
+  &__profile {
+    margin-bottom: 2.5rem;
+  }
+}
+
+.home_sheet {
+  text-align: center;
+  border: 1px solid utils.$primary-dark;
+  border-radius: 1rem;
+  box-shadow: 6px 6px 6px utils.$primary-light;
+  padding: 1rem;
+  &__pins {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__leftpin {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    color: silver;
+    line-height: 2.25rem;
+    vertical-align: top;
+    transform: rotate(-20deg);
+    border-radius: 100vh;
+    background-color: utils.$primary-dark;
+    box-shadow: 3px 10px 10px utils.$primary-light;
+  }
+  &__rightpin {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    color: silver;
+    line-height: 2.25rem;
+    vertical-align: top;
+    transform: rotate(20deg);
+    border-radius: 100vh;
+    background-color: utils.$primary-dark;
+    box-shadow: 3px 10px 10px utils.$primary-light;
+
+  }
+  &__title {
+    font-style: italic;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  &__skill {
+    border-bottom: 1px solid utils.$primary-dark;
+    &__name {
+      border-bottom: 1px solid utils.$primary-light;
+      padding: 0.25rem 0;
+    }
+    &__description {
+      overflow-wrap: break-word;
+      padding: 0.25rem 0;
+    }
+  }
+}
