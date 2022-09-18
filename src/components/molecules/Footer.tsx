@@ -1,4 +1,4 @@
-import styles from '@/styles/modules/Footer.module.scss'
+import styles from '@/styles/modules/Footer.module.css'
 
 import type { FC } from 'react'
 
