@@ -1,4 +1,4 @@
-import styles from '@/styles/modules/Skills.module.scss'
+import styles from '@/styles/modules/Skills.module.css'
 
 import { Clipboard } from '@/components/molecules/Clipboard'
 import { ProfileImageWithName } from '@/components/molecules/ProfileImageWithName'
