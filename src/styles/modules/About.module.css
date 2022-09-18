@@ -1,0 +1,59 @@
+.about_page {
+  max-width: 900px;
+  padding: 2rem 0;
+  margin: auto;
+}
+.about_page__profile {
+  margin-bottom: 2.5rem;
+}
+
+.about_step {
+  color: #fff;
+  text-align: center;
+}
+@media (max-width: 834px) {
+  .about_step {
+    padding: 0 1rem;
+  }
+}
+.about_step__bar {
+  display: block;
+  width: 3px;
+  height: 80px;
+  background-color: #6ec6ff;
+  margin: auto;
+}
+@media (max-width: 414px) {
+  .about_step__bar {
+    height: 50px;
+  }
+}
+.about_step__content {
+  border-radius: 1rem;
+  background-color: #2196F3;
+  overflow: hidden;
+}
+.about_step__header {
+  position: relative;
+  font-size: 1.25rem;
+  font-weight: bold;
+  background-color: #0069c0;
+  padding: 1.5rem 2rem;
+}
+.about_step__date {
+  position: absolute;
+  top: 50%;
+  left: 2rem;
+  transform: translateY(-50%);
+}
+.about_step__description {
+  display: inline-block;
+  text-align: left;
+  white-space: pre-line;
+  padding: 2.5rem 3.5rem;
+}
+@media (max-width: 414px) {
+  .about_step__description {
+    padding: 1rem 1.4rem;
+  }
+}
