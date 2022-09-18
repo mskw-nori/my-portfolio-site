@@ -1,4 +1,4 @@
-import styles from '@/styles/modules/ProfileImageWithName.module.scss'
+import styles from '@/styles/modules/ProfileImageWithName.module.css'
 
 import { ProfileImage } from '@/components/atoms/ProfileImage'
 import { getNowDateString } from '@/utils/getNowDateString'

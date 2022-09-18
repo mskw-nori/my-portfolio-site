@@ -1,4 +1,4 @@
-import styles from '@/styles/modules/MainWithHeaderAndFooter.module.scss'
+import styles from '@/styles/modules/MainWithHeaderAndFooter.module.css'
 
 import { Footer } from '@/components/molecules/Footer'
 import { Header } from '@/components/molecules/Header'

@@ -1,4 +1,4 @@
-import styles from '@/styles/modules/Home.module.scss'
+import styles from '@/styles/modules/Home.module.css'
 
 import { ProfileImageWithName } from '@/components/molecules/ProfileImageWithName'
 import { MainWithHeaderAndFooter } from '@/components/templates/MainWithHeaderAndFooter'
