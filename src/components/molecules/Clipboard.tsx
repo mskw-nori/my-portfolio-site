@@ -1,4 +1,4 @@
-import styles from '@/styles/modules/Clipboard.module.scss'
+import styles from '@/styles/modules/Clipboard.module.css'
 
 import type { FC, ReactNode } from 'react'
 
@@ -12,9 +12,9 @@ type Props = {
 
 export const Clipboard: FC<Props> = ({ content, title }) => (
   <div className={styles.clipboard}>
-    <div className={styles.clipboard__pins}>
-      <span className={styles.clipboard__pins__left} />
-      <span className={styles.clipboard__pins__right} />
+    <div className={styles.clipboard_pins}>
+      <span className={styles.clipboard_pins__left} />
+      <span className={styles.clipboard_pins__right} />
     </div>
     <div className={styles.clipboard_contents}>
       <h1 className={styles.clipboard_title}>{title}</h1>
@@ -27,9 +27,9 @@ export const Clipboard: FC<Props> = ({ content, title }) => (
         ))}
       </ol>
     </div>
-    <div className={styles.clipboard__pins}>
-      <span className={styles.clipboard__pins__left} />
-      <span className={styles.clipboard__pins__right} />
+    <div className={styles.clipboard_pins}>
+      <span className={styles.clipboard_pins__left} />
+      <span className={styles.clipboard_pins__right} />
     </div>
   </div>
 )

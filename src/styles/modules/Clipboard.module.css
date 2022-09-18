@@ -1,0 +1,65 @@
+.clipboard {
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+.clipboard_pins {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.clipboard_pins__left {
+  position: relative;
+  transform-origin: top;
+  transform: rotate(-20deg);
+  width: 2px;
+  height: 12.5px;
+  background-color: #827d7d;
+}
+.clipboard_pins__right {
+  position: relative;
+  transform-origin: top;
+  transform: rotate(20deg);
+  width: 2px;
+  height: 12.5px;
+  background-color: #827d7d;
+}
+.clipboard_pins__right::before, .clipboard_pins__left::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -50%;
+  left: -4px;
+  width: 10px;
+  height: 10px;
+  border-radius: 100vh;
+  background-color: #ef5350;
+  box-shadow: 5px 10px 10px #827d7d;
+}
+.clipboard_pins__right::after, .clipboard_pins__left::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -50%;
+  left: 0;
+  width: 3px;
+  height: 3px;
+  border-radius: 100vh;
+  background-color: #fff;
+}
+.clipboard_contents {
+  background-image: repeating-linear-gradient(#fff, #fff 30px, #2196F3 31px);
+  margin: 0 1.25rem 1.5rem;
+}
+.clipboard_title {
+  font-style: italic;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.clipboard_textarea__title {
+  line-height: 31px;
+}
+.clipboard_textarea__description {
+  line-height: 31px;
+  overflow-wrap: break-word;
+}
