@@ -11,9 +11,9 @@ type Props = {
 }
 
 export const MainWithHeaderAndFooter: FC<Props> = ({ pageName, children }) => (
-  <div className={styles['layout-container']}>
+  <div className={styles.layout_container}>
     <Header pageName={pageName} />
-    <main className={styles['layout-container__content']}>{children}</main>
+    <main className={styles.layout_container__content}>{children}</main>
     <Footer />
   </div>
 )
