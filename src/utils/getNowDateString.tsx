@@ -22,7 +22,7 @@ export const getNowDateString = () => {
     return 'th'
   })()
 
-  const today = `${dateYear} ${dateMonth} ${dateDay}${dateSuffix}`
+  const today = `${dateYear}・${dateMonth}・${dateDay}${dateSuffix}`
 
   return today
 }
