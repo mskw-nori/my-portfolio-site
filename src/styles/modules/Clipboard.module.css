@@ -1,61 +1,66 @@
 .clipboard {
   border: 1px solid #ccc;
-  border-radius: 1rem;
   padding: 0.5rem;
 }
 .clipboard__pins {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
 }
 .clipboard__pins--left {
   position: relative;
   transform-origin: top;
   transform: rotate(-20deg);
-  width: 2px;
-  height: 12.5px;
-  background-color: #827d7d;
+  width: 1px;
+  height: 10px;
+  background-color: #444;
 }
 .clipboard__pins--right {
   position: relative;
   transform-origin: top;
   transform: rotate(20deg);
-  width: 2px;
-  height: 12.5px;
-  background-color: #827d7d;
+  width: 1px;
+  height: 10px;
+  background-color: #444;
 }
 .clipboard__pins--right::before, .clipboard__pins--left::before {
   content: "";
   display: block;
   position: absolute;
-  top: -50%;
-  left: -4px;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
   width: 10px;
   height: 10px;
   border-radius: 100vh;
-  background-color: #ef5350;
-  box-shadow: 5px 10px 10px #827d7d;
+  background-color: var(--secondary-main);
+  box-shadow: -5px 5px 10px #827d7d;
 }
 .clipboard__pins--right::after, .clipboard__pins--left::after {
   content: "";
   display: block;
   position: absolute;
-  top: -50%;
+  top: -3px;
   left: 0;
   width: 3px;
   height: 3px;
   border-radius: 100vh;
+  filter: blur(0.3px);
   background-color: #fff;
 }
 .clipboard__contents {
+  font-family: "New Tegomin";
+  font-weight: 550;
+  padding: 1.25rem;
+}
+.clipboard__note {
   line-height: 31px;
   overflow-wrap: break-word;
-  background-image: repeating-linear-gradient(#fff, #fff 30px, #2196F3 31px);
-  margin: 0 1.25rem 1.5rem;
+  background-image: repeating-linear-gradient(#fff, #fff 30px, var(--primary-main) 31px);
+  border-top: solid 1.5px var(--primary-dark);
+  padding: 0 0.5rem;
 }
 .clipboard__title {
-  font-style: italic;
   font-size: 2rem;
-  font-weight: bold;
+  padding: 0.5rem;
 }
 
