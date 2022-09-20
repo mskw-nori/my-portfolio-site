@@ -1,15 +1,13 @@
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--primary-main);
-  color: #fff;
   padding: 2rem 1.25rem;
 }
-.header__title {
-  font-weight: bold;
-  font-size: 1.5rem;
+
+.header__contents {
+  display: flex;
+  justify-content: flex-end;
+  margin: auto;
 }
+
 .header__links {
   display: flex;
   align-items: center;
@@ -17,4 +15,7 @@
 .header__link {
   text-decoration: none;
   padding: 0 0.75rem;
+}
+.header__link--current {
+  font-weight: bold;
 }
