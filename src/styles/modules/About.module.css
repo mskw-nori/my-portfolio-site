@@ -11,7 +11,7 @@
   color: #fff;
   text-align: center;
 }
-@media (max-width: 834px) {
+@media (max-width: var(--breakpoint-md)) {
   .about_step {
     padding: 0 1rem;
   }
@@ -23,7 +23,7 @@
   background-color: var(--primary-light);
   margin: auto;
 }
-@media (max-width: 414px) {
+@media (max-width: var(--breakpoint-sm)) {
   .about_step__bar {
     height: 50px;
   }
@@ -52,7 +52,7 @@
   white-space: pre-line;
   padding: 2.5rem 3.5rem;
 }
-@media (max-width: 414px) {
+@media (max-width: var(--breakpoint-sm)) {
   .about_step__description {
     padding: 1rem 1.4rem;
   }
