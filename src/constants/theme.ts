@@ -1,4 +1,4 @@
-export const THEME_VARIABLES = {
+export const THEME = {
   colors: {
     primary: {
       light: '#6ec6ff',

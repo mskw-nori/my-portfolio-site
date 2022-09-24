@@ -1,10 +1,10 @@
 import { useEffect } from 'react'
 
-import { THEME_VARIABLES } from '@/constants/themeVariables'
+import { THEME } from '@/constants/theme'
 
-export const useSetThemeVariablesToCssVariables = () => {
+export const useSetThemeToCssVariables = () => {
   useEffect(() => {
-    const { colors, breakpoints } = THEME_VARIABLES
+    const { colors, breakpoints } = THEME
 
     const convertedColors = Object.entries(colors).flatMap(([category, values]) => Object.entries(values).map(([name, value]) => [`--${category}-${name}`, value]))
     const convertedBreakpoints = Object.entries(breakpoints).map(([name, value]) => [`--breakpoint-${name}`, `${value}px`])
