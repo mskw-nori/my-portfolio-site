@@ -11,12 +11,12 @@ type Props = {
 }
 
 export const Clipboard: FC<Props> = ({ name, children, pinColor }) => {
-  const rollingDgree = `${Math.floor(Math.random() * (40 + 1 - 10)) + 15}deg`
+  const rollingDegree = `${Math.floor(Math.random() * (40 + 1 - 15)) + 15}deg`
 
   return (
     // NOTE: styleプロパティからCSS変数を追加するためts-ignoreしている。
     // @ts-ignore
-    <div className={styles.clipboard} style={{ '--rolling-degree': rollingDgree, ...(pinColor && { '--pin-color': pinColor }) }}>
+    <div className={styles.clipboard} style={{ '--rolling-degree': rollingDegree, ...(pinColor && { '--pin-color': pinColor }) }}>
       <div className={styles.clipboard__pin} />
 
       <div className={styles.clipboard__contents}>
