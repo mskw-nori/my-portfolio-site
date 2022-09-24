@@ -1,5 +1,8 @@
 {
   "extends": ["next/core-web-vitals", "standard", "prettier"],
+  "env": {
+    "jest": true
+  },
   "rules": {
     "import/order": [
       "error",
