@@ -16,6 +16,11 @@
             "group": "type"
           },
           {
+            "pattern": "@/components/atoms/icons/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
             "pattern": "@/**",
             "group": "internal"
           }
