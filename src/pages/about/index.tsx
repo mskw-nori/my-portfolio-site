@@ -1,7 +1,8 @@
 import styles from '@/styles/modules/About.module.css'
 
-import { ProfileImageWithName } from '@/components/molecules/ProfileImageWithName'
+import { ProfileImage } from '@/components/atoms/ProfileImage'
 import { MainWithHeaderAndFooter } from '@/components/templates/MainWithHeaderAndFooter'
+import { PageSection } from '@/components/templates/PageSection'
 
 import type { NextPageWithLayout } from '@/types/app'
 
@@ -14,12 +15,12 @@ const profItems = [
     content: 'BtoBの卸売業、仕入部門へ就職する。 同期社員、取引先に恵まれ、このまま終身雇用かと考える。'
   },
   { year: '2022 12', title: '転職を決意する', content: '働き方改革による部門方針に疑問を持ち転職を考える。\n現在フロントエンドを勉強中。' }
-]
+] as const
 
 const About: NextPageWithLayout = () => (
-  <section className={styles.about_page}>
-    <div className={styles.about_page__profile}>
-      <ProfileImageWithName pageComment="プロフィール" />
+  <PageSection>
+    <div className={styles.about_profile}>
+      <ProfileImage />
     </div>
 
     <ol className={styles.about_step}>
@@ -36,9 +37,9 @@ const About: NextPageWithLayout = () => (
         </li>
       ))}
     </ol>
-  </section>
+  </PageSection>
 )
 
-About.getLayout = page => <MainWithHeaderAndFooter pageName="About">{page}</MainWithHeaderAndFooter>
+About.getLayout = page => <MainWithHeaderAndFooter>{page}</MainWithHeaderAndFooter>
 
 export default About
