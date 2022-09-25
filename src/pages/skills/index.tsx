@@ -1,6 +1,6 @@
 import styles from '@/styles/modules/Skills.module.css'
 
-import { PorfileImage } from '@/components/atoms/PorfileImage'
+import { ProfileImage } from '@/components/atoms/ProfileImage'
 import { CssIcon } from '@/components/atoms/icons/CssIcon'
 import { GitIcon } from '@/components/atoms/icons/GitIcon'
 import { GithubIcon } from '@/components/atoms/icons/GithubIcon'
@@ -79,7 +79,7 @@ const content = [
 const Skills: NextPageWithLayout = () => (
   <section className={styles.skill_page}>
     <div className={styles.skill_page__profile}>
-      <PorfileImage />
+      <ProfileImage />
     </div>
     <Clipboard name="Skills">
       <ol>
