@@ -7,12 +7,11 @@ import type { FC, ReactNode } from 'react'
 
 type Props = {
   children: ReactNode
-  pageName: string
 }
 
-export const MainWithHeaderAndFooter: FC<Props> = ({ pageName, children }) => (
+export const MainWithHeaderAndFooter: FC<Props> = ({ children }) => (
   <div className={styles.layout}>
-    <Header pageName={pageName} />
+    <Header />
     <main className={styles.layout__container}>{children}</main>
     <Footer />
   </div>

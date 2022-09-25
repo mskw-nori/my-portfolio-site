@@ -74,7 +74,7 @@ const content = [
     ),
     description: 'foofoofoo'
   }
-]
+] as const
 
 const Skills: NextPageWithLayout = () => (
   <section className={styles.skill_page}>
@@ -94,6 +94,6 @@ const Skills: NextPageWithLayout = () => (
   </section>
 )
 
-Skills.getLayout = page => <MainWithHeaderAndFooter pageName="Skills">{page}</MainWithHeaderAndFooter>
+Skills.getLayout = page => <MainWithHeaderAndFooter>{page}</MainWithHeaderAndFooter>
 
 export default Skills
