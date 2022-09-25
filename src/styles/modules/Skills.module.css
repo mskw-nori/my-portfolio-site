@@ -1,10 +1,4 @@
-.skill_page {
-  max-width: 600px;
-  padding: 2rem 2rem;
-  margin: auto;
-}
-.skill_page__profile {
+.skill_profile {
   text-align: center;
   margin-bottom: 2.5rem;
 }
-

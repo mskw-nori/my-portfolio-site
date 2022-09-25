@@ -16,7 +16,6 @@ const links = [
 
 export const Header: FC = () => {
   const router = useRouter()
-  console.log(router.pathname)
 
   return (
     <header className={styles.header}>
@@ -25,9 +24,9 @@ export const Header: FC = () => {
           {links.map(({ href, name }) => (
             <Link href={href} key={href}>
               <a className={clsx([styles.header__link, router.pathname === href && styles['header__link--current']])}>{name}</a>
-              {/* <a className={`${styles.header__link}${router.pathname === href ? ` ${styles['header__link--current']}` : ''}`}>{name}</a> */}
             </Link>
           ))}
+
           <Link href="https://github.com/mskw-nori">
             <a className={styles.header__link} target="_blank">
               <GithubIcon width="30px" />

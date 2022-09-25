@@ -1,5 +1,8 @@
 {
   "extends": ["next/core-web-vitals", "standard", "prettier"],
+  "env": {
+    "jest": true
+  },
   "rules": {
     "import/order": [
       "error",
@@ -14,6 +17,11 @@
           {
             "pattern": "@/types/**",
             "group": "type"
+          },
+          {
+            "pattern": "@/components/atoms/icons/**",
+            "group": "internal",
+            "position": "before"
           },
           {
             "pattern": "@/**",
