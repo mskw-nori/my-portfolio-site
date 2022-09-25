@@ -1,5 +1,6 @@
 import styles from '@/styles/modules/About.module.css'
 
+import { Clipboard } from '@/components/molecules/Clipboard'
 import { ProfileImageWithName } from '@/components/molecules/ProfileImageWithName'
 import { MainWithHeaderAndFooter } from '@/components/templates/MainWithHeaderAndFooter'
 
@@ -21,21 +22,22 @@ const About: NextPageWithLayout = () => (
     <div className={styles.about_page__profile}>
       <ProfileImageWithName pageComment="プロフィール" />
     </div>
-
-    <ol className={styles.about_step}>
-      {profItems.map(({ year, title, content }, index) => (
-        <li key={year}>
-          {index !== 0 && <span className={styles.about_step__bar} />}
-          <div className={styles.about_step__content}>
-            <h2 className={styles.about_step__header}>
-              <span className={styles.about_step__date}>{year}</span>
-              {title}
-            </h2>
-            <p className={styles.about_step__description}>{content}</p>
-          </div>
-        </li>
-      ))}
-    </ol>
+    <Clipboard name="経歴">
+      <ol className={styles.about_step}>
+        {profItems.map(({ year, title, content }, index) => (
+          <li key={year}>
+            {index !== 0 && <span className={styles.about_step__bar} />}
+            <div className={styles.about_step__content}>
+              <h2 className={styles.about_step__header}>
+                <span className={styles.about_step__date}>{year}</span>
+                {title}
+              </h2>
+              <p className={styles.about_step__description}>{content}</p>
+            </div>
+          </li>
+        ))}
+      </ol>
+    </Clipboard>
   </section>
 )
 
