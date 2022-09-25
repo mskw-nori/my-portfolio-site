@@ -2,6 +2,7 @@ import styles from '@/styles/modules/About.module.css'
 
 import { ProfileImage } from '@/components/atoms/ProfileImage'
 import { MainWithHeaderAndFooter } from '@/components/templates/MainWithHeaderAndFooter'
+import { PageSection } from '@/components/templates/PageSection'
 
 import type { NextPageWithLayout } from '@/types/app'
 
@@ -17,8 +18,8 @@ const profItems = [
 ] as const
 
 const About: NextPageWithLayout = () => (
-  <section className={styles.about_page}>
-    <div className={styles.about_page__profile}>
+  <PageSection>
+    <div className={styles.about_profile}>
       <ProfileImage />
     </div>
 
@@ -36,7 +37,7 @@ const About: NextPageWithLayout = () => (
         </li>
       ))}
     </ol>
-  </section>
+  </PageSection>
 )
 
 About.getLayout = page => <MainWithHeaderAndFooter>{page}</MainWithHeaderAndFooter>
