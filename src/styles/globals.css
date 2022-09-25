@@ -21,7 +21,7 @@ a {
 }
 
 :root {
-  --primary-main: #2196F3;
+  --primary-main: #2196f3;
   --primary-dark: #0069c0;
   --primary-light: #6ec6ff;
 
@@ -29,7 +29,7 @@ a {
   --secondary-dark: #b61827;
   --secondary-light: #ff867c;
 
- /* NOTE: max-widthで使う各デバイス上限のbreakpoint。 */
+  /* NOTE: max-widthで使う各デバイス上限のbreakpoint。 */
   --breakpoint-sm: 414px;
   --breakpoint-md: 834px;
 }
