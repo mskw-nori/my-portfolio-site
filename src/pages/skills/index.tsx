@@ -17,6 +17,7 @@ import { PageSection } from '@/components/templates/PageSection'
 
 import type { NextPageWithLayout } from '@/types/app'
 
+// TODO: スキルの内容を追記する。
 const content = [
   {
     title: (
