@@ -41,12 +41,25 @@
 }
 
 .clipboard__contents {
+  position: relative;
   font-family: 'New Tegomin';
   font-weight: 550;
   border: 1px solid #ccc;
+  border-radius: 10px;
   transform-origin: center 15px;
   animation: rolling 2s ease-in-out;
-  padding: 1.5rem 1.25rem;
+  padding: 2.75rem 1.25rem 1.5rem 2.75rem;
+}
+.clipboard__contents::before {
+  content: '';
+  display:  block;
+  position: absolute;
+  border-left: dotted 20px #ccc;
+  height: 95%;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  z-index: 1;
 }
 @keyframes rolling {
   0% {
