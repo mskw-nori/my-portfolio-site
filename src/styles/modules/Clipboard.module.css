@@ -8,10 +8,11 @@
   position: absolute;
   top: 15px;
   left: 50%;
+  z-index: 2;
   transform-origin: center bottom;
   transform: rotate(30deg) translateX(50%);
   width: 1.5px;
-  height: 15px;
+  height: 17.5px;
   background-color: #444;
 }
 .clipboard__pin::before {
@@ -21,8 +22,8 @@
   top: 0;
   left: 0;
   transform: translate(-50%, -50%);
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   border-radius: 100vh;
   background-color: var(--pin-color, var(--secondary-main));
   box-shadow: -7.5px 7.5px 12.5px #827d7d;
@@ -31,12 +32,12 @@
   content: '';
   display: block;
   position: absolute;
-  top: -3px;
-  left: 0;
-  width: 3px;
-  height: 3px;
+  top: -7.5px;
+  left: 2.5px;
+  width: 5px;
+  height: 5px;
   border-radius: 100vh;
-  filter: blur(0.3px);
+  filter: blur(1px);
   background-color: #fff;
 }
 
@@ -46,7 +47,7 @@
   font-weight: 550;
   border: 1px solid #ccc;
   border-radius: 10px;
-  transform-origin: center 15px;
+  transform-origin: center 32.5px;
   animation: rolling 2s ease-in-out;
   padding: 2.75rem 1.25rem 1.5rem 2.75rem;
 }
@@ -104,11 +105,14 @@
 
 .clipboard__note {
   position: relative;
+  /* 実際のルーズリーフの比率 1 : √2 */
+  aspect-ratio: 1/ 1.41421356;
   line-height: 30px;
   overflow-wrap: break-word;
   background: linear-gradient(var(--primary-main) 1px, transparent 1px) #fff top left / auto 30px;
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
+  overflow: auto;
   padding: 0 0.5rem;
 }
 @media (max-width: var(--breakpoint-sm)) {
