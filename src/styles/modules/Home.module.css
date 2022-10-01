@@ -1,3 +1,48 @@
+/* TODO: スマホサイズの時のデザインを追記する */
 .home_profile {
-  text-align: center;
+  display: flex;
+  max-width: 650px;
+  padding-top: 5rem;
+  margin: auto;
+}
+
+.home_profile__image {
+  margin-right: 1.5rem;
+}
+
+.home_profile__info {
+  flex: 1;
+}
+
+.home_profile__name {
+  font-family: Noto Sans JP;
+  font-weight: bold;
+  font-size: 2.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.home_profile__details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.home_profile__occupation {
+  display: flex;
+  color: var(--basics-textGray);
+}
+.home_profile__occupation_item:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.home_profile__icons {
+  display: inline-block;
+  background-color: var(--basics-normalGray);
+  border-radius: 36px;
+  padding: 5px 8px;
+}
+
+.home_profile__description {
+  line-height: 1.5rem;
 }
