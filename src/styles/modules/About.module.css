@@ -4,8 +4,8 @@
 }
 
 .about_step {
-  color: #fff;
   text-align: center;
+  padding: 30px 0;
 }
 @media (max-width: var(--breakpoint-md)) {
   .about_step {
@@ -13,28 +13,38 @@
   }
 }
 .about_step__bar {
+  position: relative;
   display: block;
   width: 3px;
-  height: 80px;
-  background-color: var(--primary-light);
+  height: 90px;
+  background-color: var(--secondary-light);
+  box-shadow: 0 0 2px 1px var(--secondary-light);
   margin: auto;
 }
-@media (max-width: var(--breakpoint-sm)) {
-  .about_step__bar {
-    height: 50px;
-  }
+.about_step__bar::after {
+    content: "";
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    width: 12px;
+    height: 12px;
+    transform: rotate(45deg);
+    transform-origin: bottom right;
+    border-right: 3px solid var(--secondary-light);
+    border-bottom: 3px solid var(--secondary-light);
+    filter: drop-shadow(1px 1px 1px var(--secondary-light))
 }
 .about_step__content {
-  border-radius: 1rem;
-  background-color: var(--primary-main);
+  position: relative;
+  border-radius: 2rem;
+  box-shadow: 0 0 5px 5px var(--secondary-light), inset 0 0 5px 5px var(--secondary-light);
   overflow: hidden;
+  padding: 30px;
 }
 .about_step__header {
   position: relative;
   font-size: 1.25rem;
   font-weight: bold;
-  background-color: var(--primary-dark);
-  padding: 1.5rem 2rem;
 }
 .about_step__date {
   position: absolute;
@@ -42,14 +52,23 @@
   left: 2rem;
   transform: translateY(-50%);
 }
+@media (max-width: var(--breakpoint-sm)) {
+  .about_step__date {
+    top: 50%;
+    left: 0.5rem;
+    transform: translateY(-50%);
+  }
+}
 .about_step__description {
   display: inline-block;
   text-align: left;
+  font-size: 1.25rem;
   white-space: pre-line;
-  padding: 2.5rem 3.5rem;
+  padding: 0 3rem;
 }
 @media (max-width: var(--breakpoint-sm)) {
   .about_step__description {
-    padding: 1rem 1.4rem;
+    color: red;
+    padding: 1rem 1rem;
   }
 }
