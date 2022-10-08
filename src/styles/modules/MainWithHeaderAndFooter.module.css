@@ -6,15 +6,16 @@
 .layout__container {
   position: relative;
   flex-grow: 1;
-  background-image: linear-gradient(#ffffff40 0%, #fff 50%);;
+  background-image: linear-gradient(#ffffff40 0%, #fff 45vh);
 }
 .layout__container::before {
   content: '';
   position: absolute;
   inset: 0px;
   background-image: url('/mainBackGround.jpg');
-  background-size: cover;
-  background-position: center 40%;
+  background-size: 100vw auto;
+  background-position: center -70vh;
+  background-repeat: no-repeat;
   filter: blur(3px);
   z-index: -1;
 }
