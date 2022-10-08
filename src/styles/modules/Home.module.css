@@ -2,7 +2,7 @@
 .home_profile {
   display: flex;
   max-width: 650px;
-  padding-top: 5rem;
+  padding-top: 10rem;
   margin: auto;
 }
 
@@ -44,5 +44,5 @@
 }
 
 .home_profile__description {
-  line-height: 1.5rem;
+  line-height: 1.75rem;
 }

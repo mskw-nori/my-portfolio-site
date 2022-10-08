@@ -34,8 +34,7 @@ const Home: NextPageWithLayout = () => (
             </li>
           </ul>
           <div className={styles.home_profile__icons}>
-            {/* TODO: wantedly作成後hrefを差し替える。 */}
-            <Link href="https://google.com">
+            <Link href="https://www.wantedly.com/id/nori_masukawa">
               <a target="_blank">
                 <WantedlyIcon height="20px" fill="#fff" />
               </a>
@@ -52,6 +51,8 @@ const Home: NextPageWithLayout = () => (
           1992年生まれ、勉強をしながら転職活動中です。
           <br />
           登山が趣味で北アルプスが好き。
+          <br />
+          背景は南岳岩稜から北穂高岳へ大キレットを抜けるルート。
         </p>
       </div>
     </div>
