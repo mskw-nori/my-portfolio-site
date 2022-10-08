@@ -17,6 +17,16 @@
   filter: blur(8px);
   z-index: -1;
 }
+@media (max-width: 834px) {
+  .layout__container::before {
+    background-position: center -30vh;
+  }
+}
+@media (max-width: 414px) {
+  .layout__container::before {
+    background-position: center top;
+  }
+}
 
 .layout__icon {
   position: absolute;
