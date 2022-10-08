@@ -6,15 +6,15 @@
 .layout__container {
   position: relative;
   flex-grow: 1;
+  background-image: linear-gradient(#ffffff40 0%, #fff 50%);;
 }
 .layout__container::before {
   content: '';
   position: absolute;
   inset: 0px;
-  /* TODO: 現状のスタイルに合う画像に切り替える */
-  /* background-image: url('/mainBackGround.jpg'); */
+  background-image: url('/mainBackGround.jpg');
   background-size: cover;
-  filter: blur(8px);
-  opacity: 0.7;
+  background-position: center 40%;
+  filter: blur(3px);
   z-index: -1;
 }
