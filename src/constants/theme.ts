@@ -9,6 +9,11 @@ export const THEME = {
       light: '#ff867c',
       main: '#ef5350',
       dark: '#b61827'
+    },
+    basics: {
+      borderGray: '#e3e3e3',
+      textGray: '#828282',
+      normalGray: '#bdbdbd'
     }
   },
   // NOTE: max-widthで使う各デバイス上限のbreakpoint。

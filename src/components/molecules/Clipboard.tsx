@@ -11,6 +11,7 @@ type Props = {
 }
 
 export const Clipboard: FC<Props> = ({ name, children, pinColor }) => {
+  // TODO: サーバーとクライアントの出力HTMLが不一致になる問題を解決する
   const rollingDegree = `${Math.floor(Math.random() * (40 + 1 - 15)) + 15}deg`
 
   return (
