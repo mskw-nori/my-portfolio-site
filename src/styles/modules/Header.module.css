@@ -1,6 +1,6 @@
 .header {
   border-bottom: 1px solid var(--basics-borderGray);
-  padding: 2rem 1.25rem;
+  padding: 2rem 1.75rem;
 }
 
 .header__contents {

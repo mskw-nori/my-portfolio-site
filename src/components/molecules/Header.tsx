@@ -4,8 +4,6 @@ import { useRouter } from 'next/router'
 
 import styles from '@/styles/modules/Header.module.css'
 
-import { GithubIcon } from '@/components/atoms/icons/GithubIcon'
-
 import type { FC } from 'react'
 
 const links = [
@@ -19,21 +17,17 @@ export const Header: FC = () => {
 
   return (
     <header className={styles.header}>
-      <div className={styles.header__contents}>
-        <div className={styles.header__links}>
+      <nav className={styles.header__contents}>
+        <ul className={styles.header__links}>
           {links.map(({ href, name }) => (
-            <Link href={href} key={href}>
-              <a className={clsx([styles.header__link, router.pathname === href && styles['header__link--current']])}>{name}</a>
-            </Link>
+            <li key={href}>
+              <Link href={href}>
+                <a className={clsx([styles.header__link, router.pathname === href && styles['header__link--current']])}>{name}</a>
+              </Link>
+            </li>
           ))}
-
-          <Link href="https://github.com/mskw-nori">
-            <a className={styles.header__link} target="_blank">
-              <GithubIcon width="30px" />
-            </a>
-          </Link>
-        </div>
-      </div>
+        </ul>
+      </nav>
     </header>
   )
 }
