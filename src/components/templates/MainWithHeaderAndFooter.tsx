@@ -6,6 +6,7 @@ import { ClipboardIcon } from '@/components/atoms/icons/ClipboardIcon'
 
 import { Footer } from '@/components/molecules/Footer'
 import { Header } from '@/components/molecules/Header'
+import { isSmartphone } from '@/utils/mediaQuery'
 
 import type { FC, ReactNode } from 'react'
 
@@ -22,7 +23,7 @@ export const MainWithHeaderAndFooter: FC<Props> = ({ children }) => {
       <Header />
       <main className={styles.layout__container}>
         {children}
-        {!isHome && <ClipboardIcon className={styles.layout__icon} width={150} fill="#B7CDE8" />}
+        {!isSmartphone && !isHome && <ClipboardIcon className={styles.layout__icon} width={150} fill="#B7CDE8" />}
       </main>
       <Footer />
     </div>

@@ -1,6 +1,9 @@
+import { useLayoutEffect } from 'react'
+
 import styles from '@/styles/modules/Clipboard.module.css'
 
 import { getNowDateString } from '@/utils/getNowDateString'
+import { setCssVariable } from '@/utils/setCssVariable'
 
 import type { FC, ReactNode } from 'react'
 
@@ -11,13 +14,15 @@ type Props = {
 }
 
 export const Clipboard: FC<Props> = ({ name, children, pinColor }) => {
-  // TODO: サーバーとクライアントの出力HTMLが不一致になる問題を解決する
-  const rollingDegree = `${Math.floor(Math.random() * (40 + 1 - 15)) + 15}deg`
+  useLayoutEffect(() => {
+    setCssVariable({ name: '--rolling-degree', value: `${Math.floor(Math.random() * (40 + 1 - 15)) + 15}deg` })
+    if (pinColor) {
+      setCssVariable({ name: '--pin-color', value: pinColor })
+    }
+  }, [pinColor])
 
   return (
-    // NOTE: styleプロパティからCSS変数を追加するためts-ignoreしている。
-    // @ts-ignore
-    <div className={styles.clipboard} style={{ '--rolling-degree': rollingDegree, ...(pinColor && { '--pin-color': pinColor }) }}>
+    <div className={styles.clipboard}>
       <div className={styles.clipboard__pin} />
 
       <div className={styles.clipboard__contents}>
