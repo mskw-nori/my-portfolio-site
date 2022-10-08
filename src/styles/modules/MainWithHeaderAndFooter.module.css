@@ -6,16 +6,20 @@
 .layout__container {
   position: relative;
   flex-grow: 1;
-  background-image: linear-gradient(#ffffff40 0%, #fff 45vh);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.55) 0%, #fff 45vh);
+  overflow: hidden;
 }
 .layout__container::before {
   content: '';
   position: absolute;
   inset: 0px;
-  background-image: url('/mainBackGround.jpg');
-  background-size: 100vw auto;
-  background-position: center -70vh;
-  background-repeat: no-repeat;
-  filter: blur(3px);
+  background: center -72.5vh/100vw auto no-repeat url('/mainBackGround.jpg');
+  filter: blur(8px);
   z-index: -1;
+}
+
+.layout__icon {
+  position: absolute;
+  right: 2.5%;
+  bottom: 2.5%;
 }
