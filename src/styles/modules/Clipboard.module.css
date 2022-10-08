@@ -1,7 +1,7 @@
 .clipboard {
   position: relative;
   z-index: 1;
-  background-color: #fff;
+  background-color: transparent;
 }
 
 .clipboard__pin {
@@ -45,6 +45,7 @@
   position: relative;
   font-family: 'New Tegomin';
   font-weight: 550;
+  background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 10px;
   transform-origin: center 32.5px;
@@ -110,6 +111,7 @@
   line-height: 30px;
   overflow-wrap: break-word;
   background: linear-gradient(var(--primary-main) 1px, transparent 1px) #fff top left / auto 30px;
+  background-attachment: local;
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
   overflow: auto;
