@@ -41,7 +41,7 @@
   background-color: #fff;
 }
 
-.clipboard__contents {
+.clipboard__body {
   position: relative;
   font-family: 'New Tegomin';
   font-weight: 550;
@@ -52,7 +52,7 @@
   animation: rolling 2s ease-in-out;
   padding: 2.75rem 1.25rem 1.5rem 2.75rem;
 }
-.clipboard__contents::before {
+.clipboard__body::before {
   content: '';
   display:  block;
   position: absolute;
@@ -64,10 +64,10 @@
   z-index: 1;
 }
 @media (max-width: 414px) {
-  .clipboard__contents {
+  .clipboard__body {
     padding: 2.25rem 1rem 1.25rem 2.5rem;
   }
-  .clipboard__contents::before {
+  .clipboard__body::before {
     border-width: 15px;
   }
 }
@@ -87,18 +87,18 @@
   }
 }
 
-.clipboard__title {
+.clipboard__header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   padding: 0.25rem 0.5rem;
 }
 
-.clipboard__name {
+.clipboard__title {
   font-size: 1.75rem;
 }
 @media (max-width: 414px) {
-  .clipboard__name {
+  .clipboard__title {
     font-size: 1.5rem;
   }
 }
@@ -112,7 +112,7 @@
   }
 }
 
-.clipboard__note {
+.clipboard__contents {
   position: relative;
   /* 実際のルーズリーフの比率 1 : √2 */
   aspect-ratio: 1/ 1.41421356;
@@ -125,7 +125,7 @@
   overflow: auto;
   padding: 0 0.5rem;
 }
-.clipboard__note::before {
+.clipboard__contents::before {
   content: '';
   display: block;
   position: absolute;
@@ -136,7 +136,7 @@
   background-color: var(--primary-dark);
 }
 @media (max-width: 414px) {
-  .clipboard__note {
+  .clipboard__contents {
     font-size: 0.75rem;
     line-height: 25px;
     background-size: auto 25px;

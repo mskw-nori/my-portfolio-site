@@ -1,5 +1,3 @@
-import styles from '@/styles/modules/Skills.module.css'
-
 import { CssIcon } from '@/components/atoms/icons/CssIcon'
 import { GitIcon } from '@/components/atoms/icons/GitIcon'
 import { GithubIcon } from '@/components/atoms/icons/GithubIcon'
@@ -14,6 +12,7 @@ import { ProfileImage } from '@/components/atoms/ProfileImage'
 import { Clipboard } from '@/components/molecules/Clipboard'
 import { MainWithHeaderAndFooter } from '@/components/templates/MainWithHeaderAndFooter'
 import { PageSection } from '@/components/templates/PageSection'
+import styles from '@/pages/skills/Skills.module.css'
 
 import type { NextPageWithLayout } from '@/types/app'
 
@@ -85,7 +84,7 @@ const Skills: NextPageWithLayout = () => (
       <ProfileImage />
     </div>
 
-    <Clipboard name="Skills">
+    <Clipboard title="Skills">
       <ol>
         {content.map(({ title, description }, index) => (
           <li key={index}>
