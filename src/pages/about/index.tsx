@@ -1,9 +1,8 @@
-import styles from '@/styles/modules/About.module.css'
-
 import { ProfileImage } from '@/components/atoms/ProfileImage'
 import { Clipboard } from '@/components/molecules/Clipboard'
 import { MainWithHeaderAndFooter } from '@/components/templates/MainWithHeaderAndFooter'
 import { PageSection } from '@/components/templates/PageSection'
+import styles from '@/pages/about/About.module.css'
 
 import type { NextPageWithLayout } from '@/types/app'
 
@@ -23,7 +22,7 @@ const About: NextPageWithLayout = () => (
     <div className={styles.about_profile}>
       <ProfileImage />
     </div>
-    <Clipboard name="経歴">
+    <Clipboard title="経歴">
       <ol className={styles.about_step}>
         {profItems.map(({ year, title, content }, index) => (
           <li key={year}>

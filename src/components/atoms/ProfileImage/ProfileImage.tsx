@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import styles from '@/styles/modules/ProfileImage.module.css'
+import styles from '@/components/atoms/ProfileImage/ProfileImage.module.css'
 
 import type { FC } from 'react'
 

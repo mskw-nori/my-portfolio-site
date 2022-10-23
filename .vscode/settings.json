@@ -2,5 +2,11 @@
   "editor.codeActionsOnSave": ["source.fixAll"],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  "cSpell.words": ["clsx", "fontsource", "tegomin", "wantedly"]
+  "cSpell.words": [
+    "clsx",
+    "fontsource",
+    "Nextjs",
+    "tegomin",
+    "wantedly"
+  ]
 }
