@@ -1,11 +1,10 @@
 import { useRouter } from 'next/router'
 
-import styles from '@/styles/modules/MainWithHeaderAndFooter.module.css'
-
 import { ClipboardIcon } from '@/components/atoms/icons/ClipboardIcon'
 
 import { Footer } from '@/components/molecules/Footer'
 import { Header } from '@/components/molecules/Header'
+import styles from '@/components/templates/MainWithHeaderAndFooter/MainWithHeaderAndFooter.module.css'
 import { isSmartphone } from '@/utils/mediaQuery'
 
 import type { FC, ReactNode } from 'react'

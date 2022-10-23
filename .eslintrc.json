@@ -1,5 +1,5 @@
 {
-  "extends": ["next/core-web-vitals", "standard", "prettier"],
+  "extends": ["next/core-web-vitals", "standard", "plugin:storybook/recommended", "prettier"],
   "env": {
     "jest": true
   },

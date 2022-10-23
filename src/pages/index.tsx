@@ -1,7 +1,5 @@
 import Link from 'next/link'
 
-import styles from '@/styles/modules/Home.module.css'
-
 import { GithubIcon } from '@/components/atoms/icons/GithubIcon'
 import { HumanIcon } from '@/components/atoms/icons/HumanIcon'
 import { PinIcon } from '@/components/atoms/icons/PinIcon'
@@ -11,6 +9,7 @@ import { ProfileImage } from '@/components/atoms/ProfileImage'
 import { MainWithHeaderAndFooter } from '@/components/templates/MainWithHeaderAndFooter'
 import { PageSection } from '@/components/templates/PageSection'
 import { THEME } from '@/constants/theme'
+import styles from '@/pages/index.module.css'
 
 import type { NextPageWithLayout } from '@/types/app'
 

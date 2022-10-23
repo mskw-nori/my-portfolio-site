@@ -1,4 +1,4 @@
-import styles from '@/styles/modules/PageSection.module.css'
+import styles from '@/components/templates/PageSection/PageSection.module.css'
 
 import type { FC, ReactNode } from 'react'
 
